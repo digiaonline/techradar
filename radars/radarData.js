@@ -1,5 +1,5 @@
 //This is the title for your window tab, and your Radar
-document.title = "Digia Technology Radar H1/2017";
+document.title = "Digia Technology Radar H1/2018";
 
 
 //This is the concentic circles that want on your radar

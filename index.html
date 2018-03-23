@@ -1,43 +1,1005 @@
 <html>
+
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8">  
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Digia Tech Radar</title>
 
-<script src="https://code.jquery.com/jquery-1.10.1.min.js" integrity="sha256-SDf34fFWX/ZnUozXXEH0AeB+Ip3hvRsjLwp6QNTEb3k=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="lib/protovis-3.2/protovis-d3.2.js"></script>
-<script type="text/javascript" charset="utf-8" src="utils.js"></script>
-<script type="text/javascript" charset="utf-8" src="lib/lodash.underscore.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="radars/radarData.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="radar_new.js"></script>
 
-<style type="text/css" media="screen">
-
-body {
+<style type="text/css">
+  body {
     font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  h3 {
+    margin-top: 5px;
+  }
+  li {
+    margin: 5px 5px 0 0;
+  }
+  table {
+    width: 1300px;
+    margin: 0 5px 0 5px;
+    font-size: 14px;
+  }
+  td {
+    width: 50%;
+    vertical-align: top;
+    padding-right: 5px;
   }
 </style>
-<script type="text/javascript" src="radar.js" charset="utf-8"></script>
-<script type="text/javascript" charset="utf-8">
-
-</script>
-
 </head>
 
-<body onload="init(h,w);">
-<h1 id="title" style="text-align: center;"></h1>
-<div id="radar" style="text-align: center;"></div>
+<body>
 
-<div style="width: 990px; margin-left: 50; margin-top: 10px;">
-    Digian teknologiakartta ja lista teknologioista, ohjelmointikielistä, kehyksistä, tuotteista, alustoista ja työvälineistä. Nämä kaikki on ryhmitelty 4 eri kehälle kuvaamaan niiden tarkoitusta ja käyttöä Digialla. 
+<svg id="radar"></svg>
+
+<script>
+radar_visualization({
+  svg_id: "radar",
+  width: 1290,
+  height: 920,
+  colors: {
+    background: "#fff",
+    grid: "#bbb",
+    inactive: "#ddd"
+  },
+  title: "Digia Tech Radar Q1/2018",
+  quadrants: [
+    { name: "Integration, API & DB" },
+    { name: "Products, Platforms & Cloud" },
+    { name: "Programming Languages & Frameworks" },
+    { name: "DevOps & Tools" }
+  ],
+  rings: [
+    { name: "Primary I", color: "#00b050" },
+    { name: "Primary II", color: "#00b0f0" },
+    { name: "Trial", color: "#ffc000" },
+    { name: "Hold", color: "#c00000" }
+  ],
+  print_layout: true,
+   //zoomed_quadrant: 0,
+  //ENTRIES
+  entries: [
+      //Programming Languages and Frameworks
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Javascript",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Java",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "React",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "NodeJS",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "PHP",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Laravel",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Lumen",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Spring Boot",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "ASP.NET",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Angular",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "C#",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Redux",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 0,
+        label: "Typescript",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Clojure",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Clojurescript",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Kendo UI",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "VB.net",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Go",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "Pyhton",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "MobX",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "Flowtype",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "Vue.js",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "R",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 2,
+        ring: 2,
+        label: "Spark",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Scala",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Qt",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "Backbone",
+        active: false,
+        moved: 0
+      },
+      //DevOps & Tools
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Docker Swarm",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "VSTS",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Robot Framework",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Nexus 3",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Chef",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Jenkins",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Gitlab (CI)",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "HAProxy",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Sonarqube",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Ansible",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "Docker",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "JMeter",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 0,
+        label: "OWASP ZAP",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Artifactory",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "CloudFormation",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Nginx",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "TFS",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Packer",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Vagrant",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Artifactory",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "F5",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Github",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Travis CI",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "TestRail",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "SoapUI",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Locust",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Chef Inspec",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Terraform",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Graylog",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "ELK",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Capistrano",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Kontena",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Bamboo",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Kubernetes",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 3,
+        ring: 3,
+        label: "SVN",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 3,
+        label: "Heat",
+        active: false,
+        moved: .1
+      },
+      {
+        quadrant: 3,
+        ring: 3,
+        label: "Consul",
+        active: false,
+        moved: 1
+      },
+      //Integration, API & DB
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "IBM API Connect",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "IBM Integration Bus",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "IBM DataPower",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "IBM MQ",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "ServiceMix",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "Dell Boomi",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "MySQL",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "CouchDB",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "SQL Server",
+        active: false,
+        moved: 0
+      },{
+        quadrant: 0,
+        ring: 0,
+        label: "Oracle DB",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "DB2",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Oracle SOA Suite",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Oracle Service Bus",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Tyk API Gateway",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Frends4",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Frends API",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "PostegreSQL",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "WSO2 API",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "MS BizTalk",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 0,
+        ring: 1,
+        label: "Digia IPaaS",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "3Scale",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Apigee",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Automic",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Scribe",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Kafka",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Red Hat JBoss Fuse",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "MariaDB",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "InfluxDB",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Redis",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "SAP Cloud Integration",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 2,
+        label: "Mulesoft Anypoint/CE",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 0,
+        ring: 3,
+        label: "Oracle API Management",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 3,
+        label: "Kong",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 3,
+        label: "Sonic ESB",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 3,
+        label: "Informatica",
+        active: false,
+        moved: -1
+      },
+      //Products, Platforms, Cloud
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Magento",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Qlikview",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Qlick Sense",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Power BI",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Dynamics 365",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Azure",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "AWS",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Progress",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "InRiver",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "Splunk",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "UIPath",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Google Cloud",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Upcloud",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Dynamics CRM",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Dynamics AX",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "M-Files",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Globalsign SSO",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Drupal 8",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Wordpress",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Thingworx",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Episerver",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Sharepoint",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "RichRelevance",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "IBM Cloud",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Openshift 3",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Contentful",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Blueprism",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Grafana",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Oracle Cloud",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Liferay",
+        active: false,
+        moved: -1
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Automation Anywhere",
+        active: false,
+        moved: 1
+      },
+  ]
+  //ENTRIES
+});
+</script>
+
+<table>
+<tr>
+<td>
+
+<h3>Mikä on Tech Radar?</h3>
+
+<p>
+Digian teknologiakartta ja lista teknologioista, ohjelmointikielistä, kehyksistä, tuotteista, alustoista ja työvälineistä. Nämä kaikki on ryhmitelty 4 eri kehälle kuvaamaan niiden tarkoitusta ja käyttöä Digialla.
+</p>
 <ul>
-<li><b>Primary I</b> &mdash; Teknologiat, joita käytämme aktiivisesti ja joilla tehtyjä ratkaisuja tarjoamme aktiivisesti asiakkaillemme. Tällä kehällä olevat teknologiat ovat jo koestettuja ja hyväksi todettuja. Mikäli saamme itse valita vapaasti ratkaisumme teknologiat, tulisi ne ottaa tästä kehästä. Osaamisen kehittämisessä ja rekrytoinnissa tulisi panostaa nimenomaan tämän kehän teknologioihin </li><br>
-<li><b>Primary II</b> &mdash; Hyvin tärkeitä teknologioita, joilla toimitamme ratkaisuja. Myös tämän kehän teknologioiden osaamista pitää ainakin jossain määrin ylläpitää. Rekrytoinnissa tämän kehän teknologioiden osaamisesta on hyötyä, mutta ei niin paljon kuin sisemmän <b>Primary I</b> kehän teknologioista. Monet tämän kehän teknologioista tulevat asiakasohjauksesta eli asiakkaat haluavat ratkaisunsa niillä, mutta muuten emme tarjoa niitä ratkaisuissamme jos itse saamme valita. Tämän kehän teknologioita voi siis valita vapaasti ratkaisuihin jos sisäkehän teknologia ei jostain syystä sovellu ratkaisuun.</li><br>
-<li><b>Trial</b> &mdash; Tällä kehällä sijaitsevat teknologiat, joiden suhteen olemme vielä epävarmoja. Teknologiat voivat olla uusia potentiaalisia, jotka voivat liikkua sisäänpäin osoittaessaan kypsyystasonsa. Toisaalta tällä kehällä voi myös olla teknologioita, jotka koemme olevan elinkaarensa päässä, mutta riippuen monista seikoista, emme vielä ole niistä täysin luopumassa. Teknologia voi siis siirtyä tältä kehältä sisään- tai ulospäin. Lähtökohtaisesti tämän kehän teknologioiden tarjoamista tulee tehdä todella harkiten ja mieluiten <b>aina kysyä varmistus Arkkitehtipalveluyksiköltä</b>. Tämän kehän teknologioiden osaamista ei ole tarkoitus talotasoisesti kehittää, eikä niiden osaajia ole tarkoitus rekrytoinnin kautta kasvattaa. </li><br>
+<li><b>Primary I</b> &mdash; Teknologiat, joita käytämme aktiivisesti ja joilla tehtyjä ratkaisuja tarjoamme aktiivisesti. Tällä kehällä olevat teknologiat ovat jo koestettuja ja hyväksi todettuja. Mikäli saamme itse valita vapaasti ratkaisumme teknologiat, tulisi ne ottaa tästä kehästä. Osaamisen kehittämisessä ja rekrytoinnissa panostamme nimenomaan tämän kehän teknologioihin.</li>
+<li><b>Primary II</b> &mdash; Hyvin tärkeitä teknologioita, joilla toimitamme ratkaisuja. Myös tämän kehän teknologioiden osaamista pitää ylläpitää. Monet tämän kehän teknologioista tulevat asiakasohjauksesta eli asiakkaat haluavat ratkaisunsa niillä, mutta muuten emme tarjoa niitä ratkaisuissamme jos itse saamme valita. Tämän kehän teknologioita voi siis valita vapaasti ratkaisuihin jos sisäkehän teknologia ei jostain syystä sovellu ratkaisuun.</li>
+<li><b>Trial</b> &mdash; Tällä kehällä sijaitsevat teknologiat, joiden suhteen olemme vielä epävarmoja. Teknologiat voivat olla uusia potentiaalisia, jotka voivat liikkua sisäänpäin osoittaessaan kypsyystasonsa. Toisaalta tällä kehällä voi myös olla teknologioita, jotka koemme olevan elinkaarensa päässä, mutta riippuen monista seikoista, emme vielä ole niistä täysin luopumassa. Teknologia voi siis siirtyä tältä kehältä sisään- tai ulospäin. Lähtökohtaisesti tämän kehän teknologioiden tarjoamista tulee tehdä todella harkiten ja mieluiten aina kysyä varmistus Arkkitehtipalveluyksiköltä tai CTO:lta. Tämän kehän teknologioiden osaamista ei ole tarkoitus talotasoisesti nostaa nykyiseltä tasolta, eikä niiden osaajia ole tarkoitus rekrytoinnin kautta kasvattaa nykyisestä.</li>
 <li><b>Hold</b> &mdash; Uloimman kehän teknologiat ovat sellaisia, joita seuraamme, mutta emme vielä ole käyttämässä tai joita Digialla on käytetty aiemmin, mutta joiden käyttöä pyrimme tällä hetkellä välttämään.</li>
 </ul>
 
-<p>
-Digian teknologiakartan ylläpidosta vastaa Digian Arkkitehtipalveluyksikkö. Sen eri osioiden valinnat tulevat pääosin Digian teknologiaheimoista (DevOps, Frontend, Pilvi, Integraatio, jne.). Tee muutosehdotukset "Pull Request" -menettelyn kautta, jolloin niistä voidaan keskustella kyseisen ehdotuksen hyväksymiseen liittyen. Mikäli kyseessä on teknologiavalinta, joka tulee suorittaa kiirellisesti esim. myyntikeissiin liittyen, keskustele tästä suoraan Tero Niemistön kanssa.
-</p>
-</div>
+</td>
+
+</tr>
+</table>
+
 </body>
 </html>

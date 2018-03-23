@@ -27,12 +27,12 @@ var radar_data = [
             { name: 'Backbone', pc:{ r: 360 , t: 155 }, movement: 'c' },
 
             { name: 'MobX', pc: { r: 330, t: 155 }, movement: 'c' },
-            { name: 'Flowtype', pc: { r: 300, t: 160 }, movement: 'c' },
+            { name: 'Flow', pc: { r: 300, t: 160 }, movement: 'c' },
             { name: 'Vue.js', pc:{ r: 290 , t: 150 }, movement: 'c' },
             { name: 'R', pc:{ r: 310 , t: 111 }, movement: 'c' },
             { name: 'Spark', pc:{ r: 315 , t: 100 }, movement: 'c' },
             
-            { name: 'Clojurescript', pc:{ r: 219 , t: 110 }, movement: 'c' },
+            { name: 'ClojureScript', pc:{ r: 219 , t: 110 }, movement: 'c' },
             { name: 'Clojure', pc: { r: 200, t: 133 }, movement: 'c' },
             { name: 'Kendo UI', pc: { r: 265, t: 150 }, movement: 'c' },
             { name: 'VB.net', pc: { r: 255, t: 175 }, movement: 'c' },
@@ -41,8 +41,8 @@ var radar_data = [
             
             { name: 'JavaScript', pc:{ r: 55 , t: 160 }, movement: 'c' },
             { name: 'Java', pc:{ r: 30 , t: 150 }, movement: 'c' },
-            { name: 'NodeJS', pc:{ r: 120 , t: 110 }, movement: 'c' },
-            { name: 'ReactJS', pc:{ r: 90 , t: 130 }, movement: 'c' },
+            { name: 'Node.js', pc:{ r: 120 , t: 110 }, movement: 'c' },
+            { name: 'React', pc:{ r: 90 , t: 130 }, movement: 'c' },
             { name: 'PHP', pc: { r: 160, t: 153 }, movement: 'c' },
             { name: 'Laravel', pc: { r: 165, t: 140 }, movement: 'c' },
             { name: 'Lumen', pc: { r: 165, t: 110 }, movement: 'c' },
@@ -51,7 +51,7 @@ var radar_data = [
             { name: 'Angular', pc:{ r: 90 , t: 150 }, movement: 'c' },
             { name: 'C#', pc:{ r: 130 , t: 130 }, movement: 'c' },
             { name: 'Redux', pc:{ r: 150 , t: 100 }, movement: 'c' },
-            { name: 'Typescript', pc: { r: 110, t: 173 }, movement: 'c' }
+            { name: 'TypeScript', pc: { r: 110, t: 173 }, movement: 'c' }
         ]
     },
     { "quadrant": "DevOps & Tools",
@@ -78,7 +78,7 @@ var radar_data = [
             { name: 'Packer', pc: { r: 220, t: 10 }, movement: 'c' },
             { name: 'Vagrant', pc: { r: 260, t: 70 }, movement: 'c' },
             { name: 'F5', pc: { r: 239, t: 25 }, movement: 'c' },
-            { name: 'Github', pc: { r: 200, t: 25 }, movement: 'c' },
+            { name: 'GitHub', pc: { r: 200, t: 25 }, movement: 'c' },
             { name: 'Travis CI', pc: { r: 210, t: 79 }, movement: 'c' },
             { name: 'TestRail', pc: { r: 210, t: 60 }, movement: 'c' },
             { name: 'SoapUI', pc: { r: 229, t: 51 }, movement: 'c' },
@@ -91,7 +91,7 @@ var radar_data = [
             { name: 'Nexus 3', pc: { r: 130, t: 75 }, movement: 'c' },
             { name: 'Chef', pc: { r: 75, t: 65 }, movement: 'c' },
             { name: 'Jenkins', pc: { r: 95, t: 70 }, movement: 'c' },
-            { name: 'Gitlab (CI)', pc: { r: 30, t: 50 }, movement: 'c' },
+            { name: 'GitLab (CI)', pc: { r: 30, t: 50 }, movement: 'c' },
             { name: 'HAProxy', pc: { r: 150, t: 30 }, movement: 'c' },
             { name: 'Sonarqube', pc: { r: 160, t: 60 }, movement: 'c' },
             { name: 'Ansible', pc: { r: 100, t: 30 }, movement: 'c' },
@@ -116,13 +116,13 @@ var radar_data = [
             { name: 'Grafana', pc: { r: 290, t: 230 }, movement: 'c' },
             
             { name: 'Google Cloud', pc: { r: 205, t: 240 }, movement: 'c' },
-            { name: 'Upcloud', pc: { r: 250, t: 230 }, movement: 'c' },
+            { name: 'UpCloud', pc: { r: 250, t: 230 }, movement: 'c' },
             { name: 'Dynamics CRM', pc: { r: 220, t: 200 }, movement: 'c' },
             { name: 'Dynamics AX', pc: { r: 205, t: 220 }, movement: 'c' },
             { name: 'M-Files', pc:{ r: 265 , t: 210 }, movement: 'c' },
             { name: 'Globalsign SSO', pc:{ r: 230 , t: 250 }, movement: 'c' },
             { name: 'Drupal 8', pc: { r: 205, t: 195 }, movement: 'c' },
-            { name: 'Wordpress', pc: { r: 250, t: 250 }, movement: 'c' },
+            { name: 'WordPress', pc: { r: 250, t: 250 }, movement: 'c' },
             { name: 'Thingworx', pc: { r: 265   , t: 222 }, movement: 'c' },
             { name: 'Episerver', pc:{ r: 260 , t: 200 }, movement: 'c' },
             { name: 'Sharepoint', pc:{ r: 260 , t: 190 }, movement: 'c' },

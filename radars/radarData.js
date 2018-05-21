@@ -91,7 +91,7 @@ var radar_data = [
             { name: 'Nexus 3', pc: { r: 130, t: 75 }, movement: 'c' },
             { name: 'Chef', pc: { r: 75, t: 65 }, movement: 'c' },
             { name: 'Jenkins', pc: { r: 95, t: 70 }, movement: 'c' },
-            { name: 'GitLab (CI)', pc: { r: 30, t: 50 }, movement: 'c' },
+            { name: 'GitLab', pc: { r: 30, t: 50 }, movement: 'c' },
             { name: 'HAProxy', pc: { r: 150, t: 30 }, movement: 'c' },
             { name: 'Sonarqube', pc: { r: 160, t: 60 }, movement: 'c' },
             { name: 'Ansible', pc: { r: 100, t: 30 }, movement: 'c' },

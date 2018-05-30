@@ -61,10 +61,10 @@ function radar_visualization(config) {
     { x: -615, y: 420 };
 
   const legend_offset = [
-    { x: 420, y: 65 },
-    { x: -629, y: 65 },
-    { x: -629, y: -350 },
-    { x: 420, y: -350 }
+    { x: 412, y: 65 },
+    { x: -655, y: 65 },
+    { x: -655, y: -350 },
+    { x: 412, y: -350 }
   ];
 
   function polar(cartesian) {
@@ -329,7 +329,7 @@ function radar_visualization(config) {
   function showBubble(d) {
     if (d.active || config.print_layout) {
       var tooltip = d3.select("#bubble text")
-        .text(d.label);
+        .text(d.bubble);
       var bbox = tooltip.node().getBBox();
       d3.select("#bubble")
         .attr("transform", translate(d.x - bbox.width / 2, d.y - 16))

@@ -38,18 +38,18 @@
 <script>
 radar_visualization({
   svg_id: "radar",
-  width: 1290,
+  width: 1360,
   height: 920,
   colors: {
     background: "#fff",
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "Digia Tech Radar Q1/2018",
+  title: "Digia Tech Radar Q2/2018",
   quadrants: [
-    { name: "Integration, API & DB" },
+    { name: "Integration & API" },
     { name: "Products, Platforms & Cloud" },
-    { name: "Programming Languages & Frameworks" },
+    { name: "Programming Languages, Frameworks & DB" },
     { name: "DevOps & Tools" }
   ],
   rings: [
@@ -67,6 +67,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "JavaScript",
+        bubble: "JavaScript",
         active: false,
         moved: 0
       },
@@ -74,6 +75,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "Java",
+        bubble: "Java",
         active: false,
         moved: 0
       },
@@ -81,13 +83,15 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "React",
+        bubble: "React",
         active: false,
         moved: 0
       },
       {
         quadrant: 2,
         ring: 0,
-        label: "Node.js",
+        label: "NodeJS",
+        bubble: "NodeJS",
         active: false,
         moved: 0
       },
@@ -95,6 +99,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "PHP",
+        bubble: "PHP",
         active: false,
         moved: 0
       },
@@ -102,13 +107,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "Laravel",
-        active: false,
-        moved: 0
-      },
-      {
-        quadrant: 2,
-        ring: 0,
-        label: "Lumen",
+        bubble: "Laravel",
         active: false,
         moved: 0
       },
@@ -116,6 +115,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "Spring Boot",
+        bubble: "Spring Boot",
         active: false,
         moved: 0
       },
@@ -123,6 +123,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "ASP.NET",
+        bubble: "ASP.NET",
         active: false,
         moved: 0
       },
@@ -130,6 +131,7 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "Angular",
+        bubble: "Angular",
         active: false,
         moved: 0
       },
@@ -137,20 +139,23 @@ radar_visualization({
         quadrant: 2,
         ring: 0,
         label: "C#",
+        bubble: "C#",
         active: false,
         moved: 0
       },
       {
         quadrant: 2,
-        ring: 0,
+        ring: 1,
         label: "Redux",
+        bubble: "Redux",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 2,
         ring: 0,
-        label: "TypeScript",
+        label: "Typescript",
+        bubble: "Typescript",
         active: false,
         moved: 0
       },
@@ -158,13 +163,15 @@ radar_visualization({
         quadrant: 2,
         ring: 1,
         label: "Clojure",
+        bubble: "Clojure",
         active: false,
         moved: 0
       },
       {
         quadrant: 2,
         ring: 1,
-        label: "ClojureScript",
+        label: "Clojurescript",
+        bubble: "Clojurescript",
         active: false,
         moved: 0
       },
@@ -172,6 +179,7 @@ radar_visualization({
         quadrant: 2,
         ring: 1,
         label: "Kendo UI",
+        bubble: "Kendo UI",
         active: false,
         moved: 0
       },
@@ -179,6 +187,7 @@ radar_visualization({
         quadrant: 2,
         ring: 1,
         label: "VB.net",
+        bubble: "VB.net",
         active: false,
         moved: 0
       },
@@ -186,27 +195,31 @@ radar_visualization({
         quadrant: 2,
         ring: 1,
         label: "Go",
-        active: false,
-        moved: 1
-      },
-      {
-        quadrant: 2,
-        ring: 1,
-        label: "Python",
-        active: false,
-        moved: 1
-      },
-      {
-        quadrant: 2,
-        ring: 2,
-        label: "MobX",
+        bubble: "Go",
         active: false,
         moved: 0
       },
       {
         quadrant: 2,
+        ring: 1,
+        label: "Python",
+        bubble: "Python",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 2,
+        ring: 1,
+        label: "MobX",
+        bubble: "MobX",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 2,
         ring: 2,
-        label: "Flow",
+        label: "Flowtype",
+        bubble: "Flowtype",
         active: false,
         moved: 0
       },
@@ -214,6 +227,7 @@ radar_visualization({
         quadrant: 2,
         ring: 2,
         label: "Vue.js",
+        bubble: "Vue.js",
         active: false,
         moved: 0
       },
@@ -221,20 +235,23 @@ radar_visualization({
         quadrant: 2,
         ring: 2,
         label: "R",
+        bubble: "R",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 2,
         ring: 2,
         label: "Spark",
+        bubble: "Spark",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 2,
         ring: 3,
         label: "Scala",
+        bubble: "Scala",
         active: false,
         moved: 0
       },
@@ -242,21 +259,32 @@ radar_visualization({
         quadrant: 2,
         ring: 3,
         label: "Qt",
+        bubble: "Qt",
         active: false,
-        moved: -1
+        moved: 0
       },
       {
         quadrant: 2,
         ring: 3,
-        label: "Backbone",
+        label: "C++",
+        bubble: "C++",
         active: false,
-        moved: 0
+        moved: 1
+      },
+      {
+        quadrant: 2,
+        ring: 3,
+        label: "VB",
+        bubble: "VB",
+        active: false,
+        moved: 1
       },
       //DevOps & Tools
       {
         quadrant: 3,
         ring: 0,
         label: "Docker Swarm",
+        bubble: "Docker Swarm",
         active: false,
         moved: 0
       },
@@ -264,6 +292,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "VSTS",
+        bubble: "VSTS",
         active: false,
         moved: 0
       },
@@ -271,20 +300,23 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "Robot Framework",
+        bubble: "Robot Framework",
         active: false,
         moved: 0
       },
       {
         quadrant: 3,
-        ring: 0,
+        ring: 1,
         label: "Nexus 3",
+        bubble: "Nexus 3",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 3,
         ring: 0,
         label: "Chef",
+        bubble: "Chef",
         active: false,
         moved: 0
       },
@@ -292,13 +324,15 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "Jenkins",
+        bubble: "Jenkins",
         active: false,
         moved: 0
       },
       {
         quadrant: 3,
         ring: 0,
-        label: "GitLab",
+        label: "Gitlab (CI)",
+        bubble: "Gitlab (CI)",
         active: false,
         moved: 0
       },
@@ -306,6 +340,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "HAProxy",
+        bubble: "HAProxy",
         active: false,
         moved: 0
       },
@@ -313,6 +348,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "Sonarqube",
+        bubble: "Sonarqube",
         active: false,
         moved: 0
       },
@@ -320,6 +356,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "Ansible",
+        bubble: "Ansible",
         active: false,
         moved: 0
       },
@@ -327,6 +364,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "Docker",
+        bubble: "Docker",
         active: false,
         moved: 0
       },
@@ -334,6 +372,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "JMeter",
+        bubble: "JMeter",
         active: false,
         moved: 0
       },
@@ -341,6 +380,7 @@ radar_visualization({
         quadrant: 3,
         ring: 0,
         label: "OWASP ZAP",
+        bubble: "OWASP ZAP",
         active: false,
         moved: 0
       },
@@ -348,6 +388,7 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "Artifactory",
+        bubble: "Artifactory",
         active: false,
         moved: 0
       },
@@ -355,6 +396,7 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "CloudFormation",
+        bubble: "CloudFormation",
         active: false,
         moved: 0
       },
@@ -362,20 +404,23 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "Nginx",
+        bubble: "Nginx",
         active: false,
         moved: 0
       },
       {
         quadrant: 3,
-        ring: 1,
+        ring: 2,
         label: "TFS",
+        bubble: "TFS",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 3,
         ring: 1,
         label: "Packer",
+        bubble: "Packer",
         active: false,
         moved: 0
       },
@@ -383,6 +428,7 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "Vagrant",
+        bubble: "Vagrant",
         active: false,
         moved: 0
       },
@@ -390,13 +436,15 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "F5",
+        bubble: "F5",
         active: false,
         moved: 0
       },
       {
         quadrant: 3,
         ring: 1,
-        label: "GitHub",
+        label: "Github",
+        bubble: "Github",
         active: false,
         moved: 0
       },
@@ -404,13 +452,15 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "Travis CI",
+        bubble: "Travis CI",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 3,
         ring: 1,
         label: "TestRail",
+        bubble: "TestRail",
         active: false,
         moved: 0
       },
@@ -418,6 +468,7 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "SoapUI",
+        bubble: "SoapUI",
         active: false,
         moved: 0
       },
@@ -425,6 +476,7 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "Locust",
+        bubble: "Locust",
         active: false,
         moved: 0
       },
@@ -432,6 +484,7 @@ radar_visualization({
         quadrant: 3,
         ring: 1,
         label: "Chef Inspec",
+        bubble: "Chef Inspec",
         active: false,
         moved: 0
       },
@@ -439,6 +492,7 @@ radar_visualization({
         quadrant: 3,
         ring: 2,
         label: "Terraform",
+        bubble: "Terraform",
         active: false,
         moved: 0
       },
@@ -446,27 +500,39 @@ radar_visualization({
         quadrant: 3,
         ring: 2,
         label: "Graylog",
+        bubble: "Graylog",
         active: false,
         moved: 0
       },
       {
         quadrant: 3,
         ring: 2,
-        label: "ELK",
+        label: "ELK/EFK",
+        bubble: "ELK/EFK",
         active: false,
         moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Varnish",
+        bubble: "Varnish",
+        active: false,
+        moved: 1
       },
       {
         quadrant: 3,
         ring: 2,
         label: "Capistrano",
+        bubble: "Capistrano",
         active: false,
-        moved: -1
+        moved: 0
       },
       {
         quadrant: 3,
-        ring: 2,
+        ring: 3,
         label: "Kontena",
+        bubble: "Kontena",
         active: false,
         moved: -1
       },
@@ -474,13 +540,47 @@ radar_visualization({
         quadrant: 3,
         ring: 2,
         label: "Bamboo",
+        bubble: "Bamboo",
         active: false,
-        moved: -1
+        moved: 0
+      },
+      {
+        quadrant: 3,
+        ring: 1,
+        label: "Kubernetes",
+        bubble: "Kubernetes",
+        active: false,
+        moved: 1
       },
       {
         quadrant: 3,
         ring: 2,
-        label: "Kubernetes",
+        label: "New Relic",
+        bubble: "New Relic",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 3,
+        ring: 2,
+        label: "Postman",
+        bubble: "Postman",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 3,
+        ring: 3,
+        label: "Crucible",
+        bubble: "Crucible",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 3,
+        ring: 3,
+        label: "Teamcity",
+        bubble: "Teamcity",
         active: false,
         moved: 1
       },
@@ -488,20 +588,15 @@ radar_visualization({
         quadrant: 3,
         ring: 3,
         label: "SVN",
+        bubble: "SVN",
         active: false,
         moved: 0
       },
       {
         quadrant: 3,
-        ring: 3,
-        label: "Heat",
-        active: false,
-        moved: .1
-      },
-      {
-        quadrant: 3,
-        ring: 3,
+        ring: 2,
         label: "Consul",
+        bubble: "Consul",
         active: false,
         moved: 1
       },
@@ -509,14 +604,24 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 0,
-        label: "IBM API Connect",
+        label: "Swagger",
+        bubble: "Swagger",
         active: false,
         moved: 1
       },
       {
         quadrant: 0,
         ring: 0,
-        label: "IBM Integration Bus",
+        label: "IBM API Connect",
+        bubble: "IBM API Connect",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 0,
+        ring: 0,
+        label: "IIB",
+        bubble: "IIB",
         active: false,
         moved: 0
       },
@@ -524,6 +629,7 @@ radar_visualization({
         quadrant: 0,
         ring: 0,
         label: "IBM DataPower",
+        bubble: "IBM DataPower",
         active: false,
         moved: 0
       },
@@ -531,6 +637,7 @@ radar_visualization({
         quadrant: 0,
         ring: 0,
         label: "IBM MQ",
+        bubble: "IBM MQ",
         active: false,
         moved: 0
       },
@@ -538,47 +645,54 @@ radar_visualization({
         quadrant: 0,
         ring: 0,
         label: "ServiceMix",
+        bubble: "ServiceMix",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 0,
         ring: 0,
         label: "Dell Boomi",
+        bubble: "Dell Boomi",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 0,
         label: "MySQL",
+        bubble: "MySQL",
         active: false,
         moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 0,
         label: "CouchDB",
+        bubble: "CouchDB",
         active: false,
         moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 0,
         label: "SQL Server",
+        bubble: "SQL Server",
         active: false,
         moved: 0
       },{
-        quadrant: 0,
+        quadrant: 2,
         ring: 0,
         label: "Oracle DB",
+        bubble: "Oracle DB",
         active: false,
         moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 0,
         label: "DB2",
+        bubble: "DB2",
         active: false,
         moved: 0
       },
@@ -586,6 +700,7 @@ radar_visualization({
         quadrant: 0,
         ring: 1,
         label: "Oracle SOA Suite",
+        bubble: "Oracle SOA Suite",
         active: false,
         moved: 0
       },
@@ -593,6 +708,7 @@ radar_visualization({
         quadrant: 0,
         ring: 1,
         label: "Oracle Service Bus",
+        bubble: "Oracle Service Bus",
         active: false,
         moved: 0
       },
@@ -600,6 +716,7 @@ radar_visualization({
         quadrant: 0,
         ring: 1,
         label: "Tyk API Gateway",
+        bubble: "Tyk API Gateway",
         active: false,
         moved: 0
       },
@@ -607,20 +724,23 @@ radar_visualization({
         quadrant: 0,
         ring: 1,
         label: "Frends4",
+        bubble: "Frends4",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 0,
         ring: 1,
         label: "Frends API",
+        bubble: "Frends API",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 1,
         label: "PostegreSQL",
+        bubble: "PostgreSQL",
         active: false,
         moved: 0
       },
@@ -628,27 +748,23 @@ radar_visualization({
         quadrant: 0,
         ring: 1,
         label: "WSO2 API",
+        bubble: "WSO2 API",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 0,
         ring: 1,
         label: "MS BizTalk",
+        bubble: "MS BizTalk",
         active: false,
-        moved: -1
-      },
-      {
-        quadrant: 0,
-        ring: 1,
-        label: "Digia IPaaS",
-        active: false,
-        moved: 1
+        moved: -0
       },
       {
         quadrant: 0,
         ring: 2,
         label: "3Scale",
+        bubble: "3Scale",
         active: false,
         moved: 0
       },
@@ -656,6 +772,7 @@ radar_visualization({
         quadrant: 0,
         ring: 2,
         label: "Apigee",
+        bubble: "Apigee",
         active: false,
         moved: 0
       },
@@ -663,6 +780,7 @@ radar_visualization({
         quadrant: 0,
         ring: 2,
         label: "Automic",
+        bubble: "Automic",
         active: false,
         moved: 0
       },
@@ -670,6 +788,7 @@ radar_visualization({
         quadrant: 0,
         ring: 2,
         label: "Scribe",
+        bubble: "Scribe",
         active: false,
         moved: 0
       },
@@ -677,48 +796,55 @@ radar_visualization({
         quadrant: 0,
         ring: 2,
         label: "Kafka",
+        bubble: "Kafka",
         active: false,
         moved: 0
       },
       {
         quadrant: 0,
         ring: 2,
-        label: "Red Hat JBoss Fuse",
+        label: "Red Hat Fuse",
+        bubble: "Red Hat Fuse",
         active: false,
-        moved: -1
+        moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 2,
         label: "MariaDB",
+        bubble: "MariaDB",
         active: false,
         moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 2,
         label: "InfluxDB",
+        bubble: "InfluxDB",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
-        quadrant: 0,
+        quadrant: 2,
         ring: 2,
         label: "Redis",
+        bubble: "Redis",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 0,
         ring: 2,
         label: "SAP Cloud Integration",
+        bubble: "SAP Cloud Integration",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 0,
-        ring: 2,
+        ring: 3,
         label: "Mulesoft Anypoint/CE",
+        bubble: "Mulesoft Anypoint/CE",
         active: false,
         moved: -1
       },
@@ -726,6 +852,7 @@ radar_visualization({
         quadrant: 0,
         ring: 3,
         label: "Oracle API Management",
+        bubble: "Oracle API Management",
         active: false,
         moved: 0
       },
@@ -733,13 +860,7 @@ radar_visualization({
         quadrant: 0,
         ring: 3,
         label: "Kong",
-        active: false,
-        moved: 0
-      },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "Sonic ESB",
+        bubble: "Kong",
         active: false,
         moved: 0
       },
@@ -747,28 +868,40 @@ radar_visualization({
         quadrant: 0,
         ring: 3,
         label: "Informatica",
+        bubble: "Informatica",
         active: false,
-        moved: -1
+        moved: 0
       },
       //Products, Platforms, Cloud
       {
         quadrant: 1,
         ring: 0,
         label: "Magento",
+        bubble: "Magento",
         active: false,
         moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 0,
+        label: "SAS",
+        bubble: "SAS Analytics Product Family",
+        active: false,
+        moved: 1
       },
       {
         quadrant: 1,
         ring: 0,
         label: "Qlikview",
+        bubble: "Qlikview",
         active: false,
         moved: 0
       },
       {
         quadrant: 1,
         ring: 0,
-        label: "Qlick Sense",
+        label: "Qlik Sense",
+        bubble: "Qlik Sense",
         active: false,
         moved: 0
       },
@@ -776,6 +909,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "Power BI",
+        bubble: "Power BI",
         active: false,
         moved: 0
       },
@@ -783,6 +917,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "Dynamics 365",
+        bubble: "Dynamics 365",
         active: false,
         moved: 0
       },
@@ -790,6 +925,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "Azure",
+        bubble: "Azure",
         active: false,
         moved: 0
       },
@@ -797,6 +933,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "AWS",
+        bubble: "AWS",
         active: false,
         moved: 0
       },
@@ -804,6 +941,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "Progress",
+        bubble: "Progress",
         active: false,
         moved: 0
       },
@@ -811,6 +949,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "InRiver",
+        bubble: "InRiver",
         active: false,
         moved: 0
       },
@@ -818,6 +957,7 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "Splunk",
+        bubble: "Splunk",
         active: false,
         moved: 0
       },
@@ -825,20 +965,23 @@ radar_visualization({
         quadrant: 1,
         ring: 0,
         label: "UIPath",
-        active: false,
-        moved: 1
-      },
-      {
-        quadrant: 1,
-        ring: 1,
-        label: "Google Cloud",
+        bubble: "UIPath",
         active: false,
         moved: 0
       },
       {
         quadrant: 1,
         ring: 1,
-        label: "UpCloud",
+        label: "Google Cloud",
+        bubble: "Google Cloud",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 1,
+        label: "Upcloud",
+        bubble: "Upcloud",
         active: false,
         moved: 0
       },
@@ -846,6 +989,7 @@ radar_visualization({
         quadrant: 1,
         ring: 1,
         label: "Dynamics CRM",
+        bubble: "Dynamics CRM",
         active: false,
         moved: 0
       },
@@ -853,20 +997,23 @@ radar_visualization({
         quadrant: 1,
         ring: 1,
         label: "Dynamics AX",
+        bubble: "Dynamics AX",
         active: false,
         moved: 0
       },
       {
         quadrant: 1,
-        ring: 1,
+        ring: 2,
         label: "M-Files",
+        bubble: "M-Files",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 1,
         ring: 1,
         label: "Globalsign SSO",
+        bubble: "Globalsign SSO",
         active: false,
         moved: 0
       },
@@ -874,13 +1021,15 @@ radar_visualization({
         quadrant: 1,
         ring: 1,
         label: "Drupal 8",
+        bubble: "Drupal 8",
         active: false,
         moved: 0
       },
       {
         quadrant: 1,
         ring: 1,
-        label: "WordPress",
+        label: "Wordpress",
+        bubble: "Wordpress",
         active: false,
         moved: 0
       },
@@ -888,6 +1037,7 @@ radar_visualization({
         quadrant: 1,
         ring: 1,
         label: "Thingworx",
+        bubble: "Thingworx",
         active: false,
         moved: 0
       },
@@ -895,34 +1045,39 @@ radar_visualization({
         quadrant: 1,
         ring: 1,
         label: "Episerver",
+        bubble: "Episerver",
         active: false,
-        moved: -1
+        moved: 0
       },
       {
         quadrant: 1,
         ring: 1,
         label: "Sharepoint",
+        bubble: "Sharepoint",
         active: false,
-        moved: -1
+        moved: 0
       },
       {
         quadrant: 1,
         ring: 1,
         label: "RichRelevance",
+        bubble: "RichRelevance",
         active: false,
-        moved: -1
+        moved: 0
       },
       {
         quadrant: 1,
         ring: 1,
         label: "IBM Cloud",
+        bubble: "IBM Cloud",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 1,
         ring: 2,
         label: "Openshift 3",
+        bubble: "Openshift 3",
         active: false,
         moved: 0
       },
@@ -930,43 +1085,57 @@ radar_visualization({
         quadrant: 1,
         ring: 2,
         label: "Contentful",
+        bubble: "Contentful",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 1,
         ring: 2,
         label: "Blueprism",
+        bubble: "Blueprism",
         active: false,
-        moved: 1
+        moved: 0
       },
       {
         quadrant: 1,
         ring: 2,
         label: "Grafana",
-        active: false,
-        moved: 1
-      },
-      {
-        quadrant: 1,
-        ring: 3,
-        label: "Oracle Cloud",
+        bubble: "Grafana",
         active: false,
         moved: 0
       },
       {
         quadrant: 1,
         ring: 3,
-        label: "Liferay",
+        label: "Oracle Cloud",
+        bubble: "Oracle Cloud",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "SAP Crystal Reports",
+        bubble: "SAP Crystal Reports",
         active: false,
         moved: -1
       },
       {
         quadrant: 1,
         ring: 3,
-        label: "Automation Anywhere",
+        label: "Liferay",
+        bubble: "Liferay",
         active: false,
-        moved: 1
+        moved: -0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Automation Anywhere",
+        bubble: "Automation Anywhere",
+        active: false,
+        moved: 0
       },
   ]
   //ENTRIES
@@ -985,7 +1154,7 @@ Digian teknologiakartta ja lista teknologioista, ohjelmointikielistä, kehyksist
 <ul>
 <li><b>Primary I</b> &mdash; Teknologiat, joita käytämme aktiivisesti ja joilla tehtyjä ratkaisuja tarjoamme aktiivisesti. Tällä kehällä olevat teknologiat ovat jo koestettuja ja hyväksi todettuja. Mikäli saamme itse valita vapaasti ratkaisumme teknologiat, tulisi ne ottaa tästä kehästä. Osaamisen kehittämisessä ja rekrytoinnissa panostamme nimenomaan tämän kehän teknologioihin.</li>
 <li><b>Primary II</b> &mdash; Hyvin tärkeitä teknologioita, joilla toimitamme ratkaisuja. Myös tämän kehän teknologioiden osaamista pitää ylläpitää. Monet tämän kehän teknologioista tulevat asiakasohjauksesta eli asiakkaat haluavat ratkaisunsa niillä, mutta muuten emme tarjoa niitä ratkaisuissamme jos itse saamme valita. Tämän kehän teknologioita voi siis valita vapaasti ratkaisuihin jos sisäkehän teknologia ei jostain syystä sovellu ratkaisuun.</li>
-<li><b>Trial</b> &mdash; Tällä kehällä sijaitsevat teknologiat, joiden suhteen olemme vielä epävarmoja. Teknologiat voivat olla uusia potentiaalisia, jotka voivat liikkua sisäänpäin osoittaessaan kypsyystasonsa. Toisaalta tällä kehällä voi myös olla teknologioita, jotka koemme olevan elinkaarensa päässä, mutta riippuen monista seikoista, emme vielä ole niistä täysin luopumassa. Teknologia voi siis siirtyä tältä kehältä sisään- tai ulospäin. Lähtökohtaisesti tämän kehän teknologioiden tarjoamista tulee tehdä todella harkiten ja mieluiten aina kysyä varmistus Arkkitehtipalveluyksiköltä tai CTO:lta. Tämän kehän teknologioiden osaamista ei ole tarkoitus talotasoisesti nostaa nykyiseltä tasolta, eikä niiden osaajia ole tarkoitus rekrytoinnin kautta kasvattaa nykyisestä.</li>
+<li><b>Trial</b> &mdash; Tällä kehällä sijaitsevat teknologiat, joiden suhteen olemme vielä epävarmoja. Teknologiat voivat olla uusia potentiaalisia, jotka voivat liikkua sisäänpäin osoittaessaan kypsyystasonsa. Toisaalta tällä kehällä voi myös olla teknologioita, jotka koemme olevan elinkaarensa päässä, mutta riippuen monista seikoista, emme vielä ole niistä täysin luopumassa. Teknologia voi siis siirtyä tältä kehältä sisään- tai ulospäin. Lähtökohtaisesti tämän kehän teknologioiden tarjoamista tulee harkita Tämän kehän teknologioiden osaamista ei ole tarkoitus talotasoisesti nostaa nykyiseltä tasolta, eikä niiden osaajia ole tarkoitus rekrytoinnin kautta kasvattaa nykyisestä.</li>
 <li><b>Hold</b> &mdash; Uloimman kehän teknologiat ovat sellaisia, joita seuraamme, mutta emme vielä ole käyttämässä tai joita Digialla on käytetty aiemmin, mutta joiden käyttöä pyrimme tällä hetkellä välttämään.</li>
 </ul>
 

@@ -45,7 +45,7 @@ radar_visualization({
     grid: "#bbb",
     inactive: "#ddd"
   },
-  title: "Digia Tech Radar Q2/2018",
+  title: "Digia Tech Radar Q3/2018",
   quadrants: [
     { name: "Integration & API" },
     { name: "Products, Platforms & Cloud" },
@@ -249,6 +249,14 @@ radar_visualization({
       },
       {
         quadrant: 2,
+        ring: 2,
+        label: "Rust",
+        bubble: "Rust",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 2,
         ring: 3,
         label: "Scala",
         bubble: "Scala",
@@ -291,8 +299,8 @@ radar_visualization({
       {
         quadrant: 3,
         ring: 0,
-        label: "VSTS",
-        bubble: "VSTS",
+        label: "Azure DevOps",
+        bubble: "Azure DevOps (was: VSTS)",
         active: false,
         moved: 0
       },
@@ -466,7 +474,7 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 1,
+        ring: 0,
         label: "SoapUI",
         bubble: "SoapUI",
         active: false,
@@ -506,15 +514,7 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 2,
-        label: "ELK/EFK",
-        bubble: "ELK/EFK",
-        active: false,
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 2,
+        ring: 1,
         label: "Varnish",
         bubble: "Varnish",
         active: false,
@@ -522,17 +522,9 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 2,
+        ring: 3,
         label: "Capistrano",
         bubble: "Capistrano",
-        active: false,
-        moved: 0
-      },
-      {
-        quadrant: 3,
-        ring: 3,
-        label: "Kontena",
-        bubble: "Kontena",
         active: false,
         moved: -1
       },
@@ -546,7 +538,7 @@ radar_visualization({
       },
       {
         quadrant: 3,
-        ring: 1,
+        ring: 0,
         label: "Kubernetes",
         bubble: "Kubernetes",
         active: false,
@@ -619,11 +611,11 @@ radar_visualization({
       },
       {
         quadrant: 0,
-        ring: 0,
-        label: "IIB",
-        bubble: "IIB",
+        ring: 1,
+        label: "App Connect Enterprise",
+        bubble: "App Connect Enterprise",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 0,
@@ -771,6 +763,14 @@ radar_visualization({
       {
         quadrant: 0,
         ring: 2,
+        label: "GraphQL",
+        bubble: "GraphQL",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 0,
+        ring: 2,
         label: "Apigee",
         bubble: "Apigee",
         active: false,
@@ -818,19 +818,19 @@ radar_visualization({
       },
       {
         quadrant: 2,
-        ring: 2,
+        ring: 1,
         label: "InfluxDB",
         bubble: "InfluxDB",
         active: false,
-        moved: 0
+        moved: 1
       },
       {
         quadrant: 2,
-        ring: 2,
+        ring: 1,
         label: "Redis",
         bubble: "Redis",
         active: false,
-        moved: 0
+        moved: 1
       },
       {
         quadrant: 0,
@@ -864,14 +864,6 @@ radar_visualization({
         active: false,
         moved: 0
       },
-      {
-        quadrant: 0,
-        ring: 3,
-        label: "Informatica",
-        bubble: "Informatica",
-        active: false,
-        moved: 0
-      },
       //Products, Platforms, Cloud
       {
         quadrant: 1,
@@ -891,11 +883,11 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 0,
+        ring: 1,
         label: "Qlikview",
         bubble: "Qlikview",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 1,
@@ -1003,11 +995,11 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 2,
+        ring: 1,
         label: "M-Files",
         bubble: "M-Files",
         active: false,
-        moved: -1
+        moved: 1
       },
       {
         quadrant: 1,
@@ -1035,11 +1027,11 @@ radar_visualization({
       },
       {
         quadrant: 1,
-        ring: 1,
+        ring: 3,
         label: "ThingWorx",
         bubble: "ThingWorx",
         active: false,
-        moved: 0
+        moved: -1
       },
       {
         quadrant: 1,
@@ -1068,6 +1060,14 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 1,
+        label: "Elastic",
+        bubble: "Elastic Stack (Elasticsearch, Logstash, Kibana)",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 1,
         label: "IBM Cloud",
         bubble: "IBM Cloud",
         active: false,
@@ -1092,6 +1092,22 @@ radar_visualization({
       {
         quadrant: 1,
         ring: 2,
+        label: "Mapbox",
+        bubble: "Mapbox",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "MML Map",
+        bubble: "MML Map",
+        active: false,
+        moved: 1
+      },
+      {
+        quadrant: 1,
+        ring: 2,
         label: "Blueprism",
         bubble: "Blueprism",
         active: false,
@@ -1104,6 +1120,14 @@ radar_visualization({
         bubble: "Grafana",
         active: false,
         moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 2,
+        label: "Signicat",
+        bubble: "Signicat IAM Solutions",
+        active: false,
+        moved: 1
       },
       {
         quadrant: 1,
@@ -1134,6 +1158,14 @@ radar_visualization({
         ring: 3,
         label: "Automation Anywhere",
         bubble: "Automation Anywhere",
+        active: false,
+        moved: 0
+      },
+      {
+        quadrant: 1,
+        ring: 3,
+        label: "Joomla",
+        bubble: "Joomla CMS",
         active: false,
         moved: 0
       },
